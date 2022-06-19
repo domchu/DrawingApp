@@ -54,9 +54,34 @@ canvas {
   margin: 0.25rem;
   border: none;
   height: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: 0.25rem solid #ccc;
+}
+
+span:hover {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: 0.25rem solid #ccc;
 }
 
 #clear {
   margin-left: auto;
+  font-size: 0.8rem;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#clear:hover {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: 0.25rem solid #ccc;
 }
 /*# sourceMappingURL=styles.css.map */

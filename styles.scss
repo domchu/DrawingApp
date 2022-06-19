@@ -34,7 +34,28 @@ canvas {
   margin: 0.25rem;
   border: none;
   height: 50px;
+  cursor: pointer;
+  //   transition: 1s;
+}
+button:hover {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: 0.25rem solid #ccc;
+}
+span:hover {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: 0.25rem solid #ccc;
 }
 #clear {
   margin-left: auto;
+  font-size: 0.8rem;
+  font-weight: bold;
+  align-items: center;
+  cursor: pointer;
+}
+#clear:hover {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: 0.25rem solid #ccc;
 }
