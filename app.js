@@ -1,6 +1,7 @@
 const canvas = document.getElementById("canvas");
 const increaseBtn = document.getElementById("increase");
 const decreaseBtn = document.getElementById("decrease");
+const sizeEl = document.getElementById("size");
 const ctx = canvas.getContext("2d");
 let size = 20;
 let x = 50;
@@ -39,6 +40,7 @@ increaseBtn.addEventListener("click", () => {
   if (size > 50) {
     size = 0;
   }
+  updateSizeOnScreen();
 });
 
 // the decrease button
@@ -47,7 +49,14 @@ decreaseBtn.addEventListener("click", () => {
   if (size < 5) {
     size = 5;
   }
+  updateSizeOnScreen();
 });
+
+// update size on the screen
+function updateSizeOnScreen() {
+  sizeEl.innerText = size;
+}
+// updateSizeOnScreen()
 
 // drawCircle();
 // continue drawing circle

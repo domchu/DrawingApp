@@ -27,12 +27,28 @@ body {
 }
 
 canvas {
-  border: 1px solid #111;
+  border: 1px solid rebeccapurple;
 }
 
 .toolbox {
-  width: 700px;
+  width: 504px;
   padding: 1rem;
+  border: 1px solid rebeccapurple;
   background-color: rebeccapurple;
+}
+
+.toolbox > * {
+  background-color: #ccc;
+  font-size: 2rem;
+  padding: 0.25rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  border: none;
+  height: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
