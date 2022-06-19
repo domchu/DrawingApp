@@ -8,12 +8,31 @@
 }
 
 body {
-  background-color: rebeccapurple;
-  color: #fff;
+  background-color: #e5e5e5;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 canvas {
-  width: 100vw;
-  height: 100vh;
+  border: 1px solid #111;
+}
+
+.toolbox {
+  width: 700px;
+  padding: 1rem;
+  background-color: rebeccapurple;
 }
 /*# sourceMappingURL=styles.css.map */
