@@ -1,8 +1,9 @@
 const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
 const increaseBtn = document.getElementById("increase");
 const decreaseBtn = document.getElementById("decrease");
 const sizeEl = document.getElementById("size");
-const ctx = canvas.getContext("2d");
+const colorEl = document.getElementById("color");
 let size = 20;
 let x = 50;
 let y = 50;
@@ -32,6 +33,7 @@ function drawCircle(x, y) {
   ctx.beginPath();
   ctx.arc(x, y, size, 0, Math.PI * 2);
   ctx.fill();
+  ctx.fillStyle = color;
 }
 
 // the increase button
@@ -56,7 +58,12 @@ decreaseBtn.addEventListener("click", () => {
 function updateSizeOnScreen() {
   sizeEl.innerText = size;
 }
-// updateSizeOnScreen()
+
+// the color update
+
+colorEl.addEventListener("change", (e) => {
+  color = e.target.value;
+});
 
 // drawCircle();
 // continue drawing circle

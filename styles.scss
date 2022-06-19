@@ -20,6 +20,7 @@ canvas {
 .toolbox {
   width: 504px;
   padding: 1rem;
+  display: flex;
   border: 1px solid rebeccapurple;
   background-color: rebeccapurple;
 }
@@ -30,6 +31,7 @@ canvas {
   display: inline-flex;
   justify-content: center;
   width: 50px;
+  margin: 0.25rem;
   border: none;
   height: 50px;
 }
