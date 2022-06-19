@@ -55,7 +55,7 @@ function drawLine(x1, y1, x2, y2) {
   ctx.moveTo(x1, y1);
   ctx.lineTo(x2, y2);
   ctx.strokeStyle = color; //targeting the color selector
-  ctx.lineWidth = size;
+  ctx.lineWidth = size; //if u multiple this line by 2, the line with be smooth
   ctx.stroke();
 }
 // the increase button
