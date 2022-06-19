@@ -4,6 +4,7 @@ const increaseBtn = document.getElementById("increase");
 const decreaseBtn = document.getElementById("decrease");
 const sizeEl = document.getElementById("size");
 const colorEl = document.getElementById("color");
+const clearEl = document.getElementById("clear");
 let size = 30;
 let color = "black";
 let x = undefined;
@@ -18,7 +19,7 @@ canvas.addEventListener("mousedown", (e) => {
   y = e.offsetY;
 });
 
-// the mouse is pressup
+// the mouse is press up
 canvas.addEventListener("mouseup", (e) => {
   isPressed = false;
 
@@ -29,7 +30,7 @@ canvas.addEventListener("mouseup", (e) => {
 // starting and continue drawing the circle
 canvas.addEventListener("mousemove", (e) => {
   if (isPressed) {
-    const x2 = e.offSetX;
+    const x2 = e.offSetX; //the direction of the mouse
     const y2 = e.offSetY;
 
     drawCircle(x2, y2); //make the line thick
@@ -48,7 +49,7 @@ function drawCircle(x, y) {
 }
 
 // drawing line
-drawLine(100, 100, 200, 200);
+// drawLine(100, 100, 200, 200) the line thickness
 function drawLine(x1, y1, x2, y2) {
   ctx.beginPath();
   ctx.moveTo(x1, y1);
@@ -84,4 +85,9 @@ function updateSizeOnScreen() {
 
 colorEl.addEventListener("change", (e) => {
   color = e.target.value;
+});
+
+//the clear button
+clearEl.addEventListener("clear", () => {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
